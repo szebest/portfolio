@@ -72,3 +72,7 @@ body[data-theme="dark"] {
 body[data-theme="light"] {
   @include light();
 }
+
+body:not([data-theme]) {
+  display: none;
+}
