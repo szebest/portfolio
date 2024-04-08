@@ -1,0 +1,74 @@
+@import "abstract/mixins";
+
+@import "abstract/light";
+@import "abstract/dark";
+
+/* Headings */
+h1 {
+  @include h1();
+}
+
+h2 {
+  @include h2();
+}
+
+h3 {
+  @include h3();
+}
+
+h4 {
+  @include h4();
+}
+
+h5 {
+  @include h5();
+}
+
+h6 {
+  @include h6();
+}
+
+p {
+  @include paragraph-4-regular();
+}
+
+/* Reset margin */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  word-break: break-word;
+}
+
+/* Reset a tag styles */
+a {
+  text-decoration: inherit;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+
+  &.disabled {
+    pointer-events: none;
+  }
+}
+
+body {
+  margin: 0;
+  color: $white;
+}
+
+body,
+body[data-theme="dark"] {
+  @include dark();
+}
+
+body[data-theme="light"] {
+  @include light();
+}

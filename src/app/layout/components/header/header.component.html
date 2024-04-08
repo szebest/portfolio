@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="header__logo">
+    <a routerLink="">
+      <p>Mateusz</p>
+      <p>Szebestik</p>
+    </a>
+  </div>
+
+  <nav class="header__navigation">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#technologies">Technologies</a></li>
+      <li><a href="#about">Education</a></li>
+      <li><a href="#about">Projects</a></li>
+      <li>
+        <button (click)="themeService.toggleTheme()">
+          <fa-icon [icon]="theme() === 'light' ? faSun : faMoon" />
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>

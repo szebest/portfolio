@@ -1,0 +1,8 @@
+@import "abstract/variables";
+@import "abstract/mixins";
+
+.chip {
+  padding: $spacing-4 $spacing-8;
+  border-radius: 10px;
+  width: max-content;
+}

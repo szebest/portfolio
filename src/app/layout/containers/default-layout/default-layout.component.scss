@@ -1,0 +1,12 @@
+@import "abstract/variables";
+@import "abstract/colors";
+
+.container {
+  background: linear-gradient(0.25turn, $secondary-700, $primary-100);
+
+  min-height: 100dvh;
+
+  &__wrapper {
+    margin: $spacing-16;
+  }
+}

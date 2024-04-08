@@ -1,0 +1,30 @@
+@import "abstract/variables";
+@import "abstract/mixins";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: $spacing-16 $spacing-24;
+
+  &__logo {
+    transform: rotate(-10deg);
+
+    p {
+      @include paragraph-1-semi-bold();
+    }
+  }
+
+  &__navigation {
+    @include paragraph-2-regular();
+
+    ul {
+      display: flex;
+      gap: $spacing-16;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
